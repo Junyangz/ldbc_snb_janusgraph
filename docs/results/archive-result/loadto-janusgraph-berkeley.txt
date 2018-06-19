@@ -1,0 +1,159 @@
+[user26@host5 janusgraph]$ ./import-to-janusgraph-berkeley.sh 
+18:46:56.817 [main] INFO  org.janusgraph - entered init 
+18:46:57.817 [main] INFO  o.j.g.c.GraphDatabaseConfiguration - Set default timestamp provider MICRO 
+18:46:57.920 [main] INFO  o.j.g.c.GraphDatabaseConfiguration - Generated unique-instance-id=c0a8051e11076-host51 
+18:46:57.991 [main] INFO  org.janusgraph.diskstorage.Backend - Initiated backend operations thread pool of size 48 
+18:46:58.122 [main] INFO  o.j.diskstorage.log.kcvs.KCVSLog - Loaded unidentified ReadMarker start time 2018-06-19T10:46:58.122Z into org.janusgraph.diskstorage.log.kcvs.KCVSLog$MessagePuller@1750fbeb 
+Connected
+18:46:58.141 [main] INFO  org.janusgraph - Building Schema 
+18:46:58.141 [main] INFO  org.janusgraph - Creating Vertex Labels 
+18:46:59.648 [main] INFO  org.janusgraph - Creating edge labels 
+18:46:59.949 [main] INFO  org.janusgraph - Creating edge labels 
+18:46:59.969 [main] INFO  org.janusgraph - Created Property Key browserUsed 
+18:47:00.053 [main] INFO  org.janusgraph - Created Property Key length 
+18:47:00.067 [main] INFO  org.janusgraph - Created Property Key locationIP 
+18:47:00.117 [main] INFO  org.janusgraph - Created Property Key Comment.id 
+18:47:00.139 [main] INFO  org.janusgraph - Created Property Key creationDate 
+18:47:00.151 [main] INFO  org.janusgraph - Created Property Key content 
+18:47:00.163 [main] INFO  org.janusgraph - Created Property Key name 
+18:47:00.201 [main] INFO  org.janusgraph - Created Property Key Organisation.id 
+18:47:00.219 [main] INFO  org.janusgraph - Created Property Key type 
+18:47:00.255 [main] INFO  org.janusgraph - Created Property Key url 
+18:47:00.270 [main] INFO  org.janusgraph - Created Property Key imageFile 
+18:47:00.288 [main] INFO  org.janusgraph - Created Property Key language 
+18:47:00.305 [main] INFO  org.janusgraph - Created Property Key Post.id 
+18:47:00.339 [main] INFO  org.janusgraph - Created Property Key Tag.id 
+18:47:00.360 [main] INFO  org.janusgraph - Created Property Key TagClass.id 
+18:47:00.387 [main] INFO  org.janusgraph - Created Property Key birthday 
+18:47:00.402 [main] INFO  org.janusgraph - Created Property Key firstName 
+18:47:00.412 [main] INFO  org.janusgraph - Created Property Key lastName 
+18:47:00.420 [main] INFO  org.janusgraph - Created Property Key gender 
+18:47:00.436 [main] INFO  org.janusgraph - Created Property Key Person.id 
+18:47:00.471 [main] INFO  org.janusgraph - Created Property Key email 
+18:47:00.492 [main] INFO  org.janusgraph - Created Property Key Place.id 
+18:47:00.510 [main] INFO  org.janusgraph - Created Property Key Forum.id 
+18:47:00.520 [main] INFO  org.janusgraph - Created Property Key title 
+18:47:00.520 [main] INFO  org.janusgraph - Creating edge property labels 
+18:47:00.532 [main] INFO  org.janusgraph - Created Property Key classYear 
+18:47:00.560 [main] INFO  org.janusgraph - Created Property Key workFrom 
+18:47:00.591 [main] INFO  org.janusgraph - Created Property Key joinDate 
+18:47:00.593 [main] INFO  org.janusgraph - Finished schema creation 
+18:47:00.593 [main] INFO  org.janusgraph - Completed init 
+18:47:00.593 [main] INFO  org.janusgraph - entered import data, dir is: /home/user26/janusgraph/test-data-100m/social_network 
+18:47:00.595 [main] INFO  org.janusgraph - entered load vertices 
+18:47:00.595 [Thread-10] INFO  org.janusgraph - Vertices Loaded 0, Edges Loaded 0, Properties Loaded 0, Current vertices loaded/s 0, Current edges loaded/s 0, Current properties loaded/s 0 
+18:47:00.615 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_0_0.csv 
+18:47:05.596 [Thread-10] INFO  org.janusgraph - Vertices Loaded 0, Edges Loaded 0, Properties Loaded 0, Current vertices loaded/s 0, Current edges loaded/s 0, Current properties loaded/s 0 
+18:47:10.596 [Thread-10] INFO  org.janusgraph - Vertices Loaded 8000, Edges Loaded 0, Properties Loaded 48000, Current vertices loaded/s 1600, Current edges loaded/s 0, Current properties loaded/s 9600 
+18:47:15.597 [Thread-10] INFO  org.janusgraph - Vertices Loaded 42000, Edges Loaded 0, Properties Loaded 252000, Current vertices loaded/s 6798, Current edges loaded/s 0, Current properties loaded/s 40791 
+18:47:20.597 [Thread-10] INFO  org.janusgraph - Vertices Loaded 80000, Edges Loaded 0, Properties Loaded 480000, Current vertices loaded/s 7600, Current edges loaded/s 0, Current properties loaded/s 45600 
+18:47:25.598 [Thread-10] INFO  org.janusgraph - Vertices Loaded 100000, Edges Loaded 0, Properties Loaded 600000, Current vertices loaded/s 3999, Current edges loaded/s 0, Current properties loaded/s 23995 
+18:47:30.598 [Thread-10] INFO  org.janusgraph - Vertices Loaded 130000, Edges Loaded 0, Properties Loaded 780000, Current vertices loaded/s 6000, Current edges loaded/s 0, Current properties loaded/s 36000 
+18:47:31.854 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_0_0.csv 
+18:47:31.854 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/organisation_0_0.csv 
+18:47:33.173 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/organisation_0_0.csv 
+18:47:33.174 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/post_0_0.csv 
+18:47:35.599 [Thread-10] INFO  org.janusgraph - Vertices Loaded 164998, Edges Loaded 0, Properties Loaded 986078, Current vertices loaded/s 6998, Current edges loaded/s 0, Current properties loaded/s 41207 
+18:47:40.599 [Thread-10] INFO  org.janusgraph - Vertices Loaded 188998, Edges Loaded 0, Properties Loaded 1178078, Current vertices loaded/s 4800, Current edges loaded/s 0, Current properties loaded/s 38400 
+18:47:45.600 [Thread-10] INFO  org.janusgraph - Vertices Loaded 212998, Edges Loaded 0, Properties Loaded 1370078, Current vertices loaded/s 4799, Current edges loaded/s 0, Current properties loaded/s 38392 
+18:47:50.600 [Thread-10] INFO  org.janusgraph - Vertices Loaded 242998, Edges Loaded 0, Properties Loaded 1610078, Current vertices loaded/s 6000, Current edges loaded/s 0, Current properties loaded/s 48000 
+18:47:55.600 [Thread-10] INFO  org.janusgraph - Vertices Loaded 266998, Edges Loaded 0, Properties Loaded 1802078, Current vertices loaded/s 4800, Current edges loaded/s 0, Current properties loaded/s 38400 
+18:47:57.735 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/post_0_0.csv 
+18:47:57.735 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/tag_0_0.csv 
+18:47:59.941 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/tag_0_0.csv 
+18:47:59.941 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/tagclass_0_0.csv 
+18:48:00.219 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/tagclass_0_0.csv 
+18:48:00.219 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_0_0.csv 
+18:48:00.255 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_0_0.csv 
+18:48:00.255 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/place_0_0.csv 
+18:48:00.510 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/place_0_0.csv 
+18:48:00.511 [Thread-13] INFO  org.janusgraph - Reading file test-data-100m/social_network/forum_0_0.csv 
+18:48:00.601 [Thread-10] INFO  org.janusgraph - Vertices Loaded 308779, Edges Loaded 0, Properties Loaded 2065926, Current vertices loaded/s 8354, Current edges loaded/s 0, Current properties loaded/s 52759 
+18:48:01.659 [Thread-13] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/forum_0_0.csv 
+18:48:03.521 [main] INFO  org.janusgraph - completed loading of Vertices 
+18:48:03.521 [main] INFO  org.janusgraph - entered load edges 
+18:48:03.557 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_workAt_organisation_0_0.csv 
+18:48:03.574 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_workAt_organisation_0_0.csv 
+18:48:03.574 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_hasTag_tag_0_0.csv 
+18:48:05.601 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 5313, Properties Loaded 2134766, Current vertices loaded/s 3761, Current edges loaded/s 1062, Current properties loaded/s 13768 
+18:48:10.602 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 53313, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 9598, Current properties loaded/s 0 
+18:48:15.602 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 99313, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 9200, Current properties loaded/s 0 
+18:48:20.603 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 155313, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 11197, Current properties loaded/s 0 
+18:48:23.031 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_hasTag_tag_0_0.csv 
+18:48:23.032 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_replyOf_post_0_0.csv 
+18:48:25.603 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 212616, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 11460, Current properties loaded/s 0 
+18:48:28.689 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_replyOf_post_0_0.csv 
+18:48:28.689 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_replyOf_comment_0_0.csv 
+18:48:30.603 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 278872, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 13251, Current properties loaded/s 0 
+18:48:35.604 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 330872, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 10397, Current properties loaded/s 0 
+18:48:35.890 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_replyOf_comment_0_0.csv 
+18:48:35.890 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_hasCreator_person_0_0.csv 
+18:48:40.604 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 381659, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 10157, Current properties loaded/s 0 
+18:48:45.604 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 429659, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 9600, Current properties loaded/s 0 
+18:48:50.605 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 479659, Properties Loaded 2134766, Current vertices loaded/s 0, Current edges loaded/s 9998, Current properties loaded/s 0 
+18:48:51.190 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_hasCreator_person_0_0.csv 
+18:48:51.190 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_likes_post_0_0.csv 
+18:48:55.605 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 530702, Properties Loaded 2168766, Current vertices loaded/s 0, Current edges loaded/s 10208, Current properties loaded/s 6800 
+18:48:55.796 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_likes_post_0_0.csv 
+18:48:55.797 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/forum_containerOf_post_0_0.csv 
+18:49:00.605 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 587917, Properties Loaded 2181981, Current vertices loaded/s 0, Current edges loaded/s 11443, Current properties loaded/s 2643 
+18:49:05.606 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 649917, Properties Loaded 2181981, Current vertices loaded/s 0, Current edges loaded/s 12397, Current properties loaded/s 0 
+18:49:06.947 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/forum_containerOf_post_0_0.csv 
+18:49:06.947 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/organisation_isLocatedIn_place_0_0.csv 
+18:49:07.683 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/organisation_isLocatedIn_place_0_0.csv 
+18:49:07.683 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/comment_isLocatedIn_place_0_0.csv 
+18:49:10.606 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 701573, Properties Loaded 2181981, Current vertices loaded/s 0, Current edges loaded/s 10331, Current properties loaded/s 0 
+18:49:15.607 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 749573, Properties Loaded 2181981, Current vertices loaded/s 0, Current edges loaded/s 9598, Current properties loaded/s 0 
+18:49:20.607 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 793573, Properties Loaded 2181981, Current vertices loaded/s 0, Current edges loaded/s 8800, Current properties loaded/s 0 
+18:49:24.120 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/comment_isLocatedIn_place_0_0.csv 
+18:49:24.120 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_likes_comment_0_0.csv 
+18:49:25.608 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 840616, Properties Loaded 2183981, Current vertices loaded/s 0, Current edges loaded/s 9406, Current properties loaded/s 399 
+18:49:30.379 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_likes_comment_0_0.csv 
+18:49:30.379 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/post_isLocatedIn_place_0_0.csv 
+18:49:30.608 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 890616, Properties Loaded 2233981, Current vertices loaded/s 0, Current edges loaded/s 10000, Current properties loaded/s 10000 
+18:49:35.608 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 950841, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 12045, Current properties loaded/s 2045 
+18:49:40.609 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1014841, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 12797, Current properties loaded/s 0 
+18:49:41.128 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/post_isLocatedIn_place_0_0.csv 
+18:49:41.128 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/tagclass_isSubclassOf_tagclass_0_0.csv 
+18:49:41.303 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/tagclass_isSubclassOf_tagclass_0_0.csv 
+18:49:41.303 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_isLocatedIn_place_0_0.csv 
+18:49:41.482 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_isLocatedIn_place_0_0.csv 
+18:49:41.482 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/post_hasCreator_person_0_0.csv 
+18:49:45.609 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1082140, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 13459, Current properties loaded/s 0 
+18:49:50.609 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1154140, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 14400, Current properties loaded/s 0 
+18:49:51.130 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/post_hasCreator_person_0_0.csv 
+18:49:51.131 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/post_hasTag_tag_0_0.csv 
+18:49:55.481 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/post_hasTag_tag_0_0.csv 
+18:49:55.481 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_hasInterest_tag_0_0.csv 
+18:49:55.610 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1213841, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 11937, Current properties loaded/s 0 
+18:49:58.848 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_hasInterest_tag_0_0.csv 
+18:49:58.849 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/forum_hasModerator_person_0_0.csv 
+18:50:00.017 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/forum_hasModerator_person_0_0.csv 
+18:50:00.017 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/place_isPartOf_place_0_0.csv 
+18:50:00.233 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/place_isPartOf_place_0_0.csv 
+18:50:00.234 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_knows_person_0_0.csv 
+18:50:00.610 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1270434, Properties Loaded 2244206, Current vertices loaded/s 0, Current edges loaded/s 11318, Current properties loaded/s 0 
+18:50:01.557 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_knows_person_0_0.csv 
+18:50:01.557 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/tag_hasType_tagclass_0_0.csv 
+18:50:03.234 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/tag_hasType_tagclass_0_0.csv 
+18:50:03.234 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/forum_hasMember_person_0_0.csv 
+18:50:05.611 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1317791, Properties Loaded 2270279, Current vertices loaded/s 0, Current edges loaded/s 9471, Current properties loaded/s 5214 
+18:50:10.611 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1369791, Properties Loaded 2322279, Current vertices loaded/s 0, Current edges loaded/s 10397, Current properties loaded/s 10397 
+18:50:14.922 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/forum_hasMember_person_0_0.csv 
+18:50:14.922 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/forum_hasTag_tag_0_0.csv 
+18:50:15.611 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1427791, Properties Loaded 2380279, Current vertices loaded/s 0, Current edges loaded/s 11600, Current properties loaded/s 11600 
+18:50:19.956 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/forum_hasTag_tag_0_0.csv 
+18:50:19.956 [Thread-16] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_studyAt_organisation_0_0.csv 
+18:50:20.172 [Thread-16] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_studyAt_organisation_0_0.csv 
+18:50:20.612 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1471059, Properties Loaded 2381547, Current vertices loaded/s 0, Current edges loaded/s 8651, Current properties loaded/s 253 
+18:50:21.939 [main] INFO  org.janusgraph - completed loading of Edges 
+18:50:21.940 [main] INFO  org.janusgraph - entered load VP 
+18:50:21.948 [Thread-19] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_email_emailaddress_0_0.csv 
+18:50:21.965 [Thread-19] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_email_emailaddress_0_0.csv 
+18:50:21.966 [Thread-19] INFO  org.janusgraph - Reading file test-data-100m/social_network/person_speaks_language_0_0.csv 
+18:50:21.974 [Thread-19] INFO  org.janusgraph - Finished reading file test-data-100m/social_network/person_speaks_language_0_0.csv 
+18:50:23.662 [main] INFO  org.janusgraph - completed loading of Vertex Properties 
+18:50:23.662 [main] INFO  org.janusgraph - completed import data 
+18:50:23.663 [Thread-10] INFO  org.janusgraph - Stats reporting thread interrupted 
+18:50:23.662 [main] INFO  org.janusgraph - Number of vertices loaded: 327588. Number of edges loaded 1477965 
+18:50:23.663 [Thread-10] INFO  org.janusgraph - Vertices Loaded 327588, Edges Loaded 1477965, Properties Loaded 2389451, Current vertices loaded/s 0, Current edges loaded/s 2263, Current properties loaded/s 2590 
