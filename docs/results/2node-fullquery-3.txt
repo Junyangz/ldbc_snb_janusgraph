@@ -1,0 +1,237 @@
+[user26@host5 janusgraph]$ ./interactive-benchmark.sh 
+22:02:02,090  INFO ExecuteWorkloadMode:40 - Driver Configuration
+22:02:02,119  INFO ExecuteWorkloadMode:40 - Workload Start Time:	2018-06-20 - 14:02:07.083
+Parameters:
+	Name:                           LDBC
+	DB:                             com.ldbc.snb.janusgraph.drivers.interactive.JanusGraphDb
+	Workload:                       com.ldbc.driver.workloads.ldbc.snb.interactive.LdbcSnbInteractiveWorkload
+	Operation Count:                500
+	Warmup Count:                   100
+	Skip Count:                     0
+	Worker Threads:                 1
+	Status Display Interval:        00:02.000 (m:s.ms)
+	Time Unit:                      MILLISECONDS
+	Results Directory:              /home/user26/janusgraph/results
+	Time Compression Ratio:         1.0000000
+	Validation Creation Params:     null
+	Database Validation File:       null
+	Calculate Workload Statistics:  false
+	Spinner Sleep Duration:         00:00.000 (m:s.ms) / 0 (ms)
+	Print Help:                     false
+	Ignore Scheduled Start Times:   false
+	User-defined parameters:
+		janusgraph.configFile = bdb.conf
+		ldbc.snb.interactive.LdbcQuery10_enable = false
+		ldbc.snb.interactive.LdbcQuery10_freq = 217
+		ldbc.snb.interactive.LdbcQuery11_enable = false
+		ldbc.snb.interactive.LdbcQuery11_freq = 133
+		ldbc.snb.interactive.LdbcQuery12_enable = false
+		ldbc.snb.interactive.LdbcQuery12_freq = 238
+		ldbc.snb.interactive.LdbcQuery13_enable = false
+		ldbc.snb.interactive.LdbcQuery13_freq = 57
+		ldbc.snb.interactive.LdbcQuery14_enable = false
+		ldbc.snb.interactive.LdbcQuery14_freq = 144
+		ldbc.snb.interactive.LdbcQuery1_enable = true
+		ldbc.snb.interactive.LdbcQuery1_freq = 132
+		ldbc.snb.interactive.LdbcQuery2_enable = false
+		ldbc.snb.interactive.LdbcQuery2_freq = 240
+		ldbc.snb.interactive.LdbcQuery3_enable = false
+		ldbc.snb.interactive.LdbcQuery3_freq = 550
+		ldbc.snb.interactive.LdbcQuery4_enable = false
+		ldbc.snb.interactive.LdbcQuery4_freq = 161
+		ldbc.snb.interactive.LdbcQuery5_enable = false
+		ldbc.snb.interactive.LdbcQuery5_freq = 534
+		ldbc.snb.interactive.LdbcQuery6_enable = false
+		ldbc.snb.interactive.LdbcQuery6_freq = 1615
+		ldbc.snb.interactive.LdbcQuery7_enable = false
+		ldbc.snb.interactive.LdbcQuery7_freq = 144
+		ldbc.snb.interactive.LdbcQuery8_enable = false
+		ldbc.snb.interactive.LdbcQuery8_freq = 13
+		ldbc.snb.interactive.LdbcQuery9_enable = false
+		ldbc.snb.interactive.LdbcQuery9_freq = 1425
+		ldbc.snb.interactive.LdbcShortQuery1PersonProfile_enable = true
+		ldbc.snb.interactive.LdbcShortQuery2PersonPosts_enable = true
+		ldbc.snb.interactive.LdbcShortQuery3PersonFriends_enable = true
+		ldbc.snb.interactive.LdbcShortQuery4MessageContent_enable = true
+		ldbc.snb.interactive.LdbcShortQuery5MessageCreator_enable = true
+		ldbc.snb.interactive.LdbcShortQuery6MessageForum_enable = true
+		ldbc.snb.interactive.LdbcShortQuery7MessageReplies_enable = true
+		ldbc.snb.interactive.LdbcUpdate1AddPerson_enable = false
+		ldbc.snb.interactive.LdbcUpdate2AddPostLike_enable = false
+		ldbc.snb.interactive.LdbcUpdate3AddCommentLike_enable = false
+		ldbc.snb.interactive.LdbcUpdate4AddForum_enable = false
+		ldbc.snb.interactive.LdbcUpdate5AddForumMembership_enable = false
+		ldbc.snb.interactive.LdbcUpdate6AddPost_enable = false
+		ldbc.snb.interactive.LdbcUpdate7AddComment_enable = false
+		ldbc.snb.interactive.LdbcUpdate8AddFriendship_enable = false
+		ldbc.snb.interactive.parameters_dir = test-data-100m/substitution_parameters/
+		ldbc.snb.interactive.short_read_dissipation = 0.2
+		ldbc.snb.interactive.update_interleave = 1
+		ldbc.snb.interactive.updates_dir = test-data-100m/social_network/
+		validate_workload = false
+
+22:02:02,119  INFO ExecuteWorkloadMode:40 - 
+ --------------------
+ --- Warmup Phase ---
+ --------------------
+22:02:02,128  INFO ExecuteWorkloadMode:40 - Scanning workload streams to calculate their limits...
+22:02:02,496  INFO WorkloadStreams:40 - Scanned 0 of 0 - OFFSET
+22:02:02,501  INFO WorkloadStreams:40 - Scanned 104 of 100 - RUN
+22:02:02,544  INFO ExecuteWorkloadMode:40 - Loaded workload: com.ldbc.driver.workloads.ldbc.snb.interactive.LdbcSnbInteractiveWorkload
+22:02:02,544  INFO ExecuteWorkloadMode:40 - Retrieving workload stream: LdbcSnbInteractiveWorkload
+22:02:03.274 [main] INFO  o.a.t.gremlin.driver.Connection - Created new connection for ws://localhost:8182/gremlin 
+22:02:03.287 [main] INFO  o.a.t.gremlin.driver.Connection - Created new connection for ws://localhost:8182/gremlin 
+22:02:03.287 [main] INFO  o.a.t.gremlin.driver.ConnectionPool - Opening connection pool on Host{address=localhost/127.0.0.1:8182, hostUri=ws://localhost:8182/gremlin} with core size of 2 
+22:02:03.708 [main] INFO  o.j.d.c.t.CassandraThriftStoreManager - Closed Thrift connection pooler. 
+22:02:03.711 [main] INFO  o.j.g.c.GraphDatabaseConfiguration - Generated unique-instance-id=c0a8051e31559-host51 
+22:02:03.734 [main] INFO  org.janusgraph.diskstorage.Backend - Initiated backend operations thread pool of size 48 
+22:02:03.777 [main] INFO  org.janusgraph.diskstorage.Backend - Configuring total store cache size: 1846122104 
+22:02:03.863 [main] INFO  o.j.diskstorage.log.kcvs.KCVSLog - Loaded unidentified ReadMarker start time 2018-06-20T14:02:03.863Z into org.janusgraph.diskstorage.log.kcvs.KCVSLog$MessagePuller@452ba1db 
+22:02:03,899  INFO ExecuteWorkloadMode:40 - Loaded DB: com.ldbc.snb.janusgraph.drivers.interactive.JanusGraphDb
+22:02:03,950  INFO ExecuteWorkloadMode:40 - Instantiating WorkloadRunner
+22:02:04,075  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:04 +0800 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+22:02:06,176  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:06 +0800 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+22:02:08,277  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:08 +0800 Runtime [00:00.631 (m:s.ms)], Operations [3], Last [00:00.361 (m:s.ms)], Throughput (Total) [4.75] (Last 0s) [4.75]
+Shutting down status thread...
+22:02:10,077  INFO ExecuteWorkloadMode:40 - Shutting down workload...
+22:02:10,077  INFO ExecuteWorkloadMode:40 - Shutting down completion time service...
+22:02:10,178  INFO ExecuteWorkloadMode:40 - Shutting down metrics collection service...
+22:02:15,283  INFO ExecuteWorkloadMode:72 - 
+------------------------------------------------------------------------------
+Operation Count:                        79
+Duration:                               00:02.239.000 (m:s.ms.us)
+Throughput:                             35.28 (op/s)
+------------------------------------------------------------------------------
+    LdbcQuery1                     Count: 13   Mean: 91.54 ms
+    LdbcShortQuery1PersonProfile   Count: 10   Mean: 3.60 ms
+    LdbcShortQuery2PersonPosts     Count: 10   Mean: 30.20 ms
+    LdbcShortQuery3PersonFriends   Count: 10   Mean: 8.30 ms
+    LdbcShortQuery4MessageContent  Count: 9    Mean: 7.78 ms
+    LdbcShortQuery5MessageCreator  Count: 9    Mean: 4.11 ms
+    LdbcShortQuery6MessageForum    Count: 9    Mean: 8.78 ms
+    LdbcShortQuery7MessageReplies  Count: 9    Mean: 12.89 ms
+------------------------------------------------------------------------------
+
+22:02:15,284  INFO ExecuteWorkloadMode:40 - Exporting workload metrics to /home/user26/janusgraph/results/LDBC-WARMUP--results.json...
+22:02:15,374  INFO ExecuteWorkloadMode:40 - Validating workload results...
+22:02:15,391  INFO ExecuteWorkloadMode:40 - Exporting workload results validation to: /home/user26/janusgraph/results/LDBC-WARMUP--validation.json
+22:02:15,402  INFO ExecuteWorkloadMode:40 - PASSED SCHEDULE AUDIT -- workload operations executed to schedule
+22:02:15,412  INFO ExecuteWorkloadMode:40 - 
+ -----------------
+ --- Run Phase ---
+ -----------------
+22:02:15,413  INFO ExecuteWorkloadMode:40 - Scanning workload streams to calculate their limits...
+22:02:15,448  INFO WorkloadStreams:40 - Scanned 104 of 100 - OFFSET
+22:02:15,451  INFO WorkloadStreams:40 - Scanned 501 of 500 - RUN
+22:02:15,462  INFO ExecuteWorkloadMode:40 - Loaded workload: com.ldbc.driver.workloads.ldbc.snb.interactive.LdbcSnbInteractiveWorkload
+22:02:15,462  INFO ExecuteWorkloadMode:40 - Retrieving workload stream: LdbcSnbInteractiveWorkload
+22:02:15,477  INFO ExecuteWorkloadMode:40 - Instantiating WorkloadRunner
+22:02:15,579  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:15 +0800 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+22:02:17,681  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:17 +0800 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+22:02:19,781  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:19 +0800 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+22:02:21,882  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:21 +0800 Runtime [00:01.319 (m:s.ms)], Operations [54], Last [00:00.048 (m:s.ms)], Throughput (Total) [40.94] (Last 1s) [40.94]
+22:02:23,983  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:23 +0800 Runtime [00:03.420 (m:s.ms)], Operations [176], Last [00:00.480 (m:s.ms)], Throughput (Total) [51.46] (Last 3s) [51.46]
+22:02:26,084  INFO WorkloadStatusThread:66 - 2018/06/20 22:02:26 +0800 Runtime [00:05.521 (m:s.ms)], Operations [229], Last [00:00.030 (m:s.ms)], Throughput (Total) [41.48] (Last 5s) [41.48]
+Shutting down status thread...
+22:02:27,889  INFO ExecuteWorkloadMode:40 - Shutting down workload...
+22:02:27,889  INFO ExecuteWorkloadMode:40 - Shutting down completion time service...
+22:02:27,989  INFO ExecuteWorkloadMode:40 - Shutting down metrics collection service...
+22:02:33,100  INFO ExecuteWorkloadMode:78 - 
+------------------------------------------------------------------------------
+Operation Count:                        482
+Duration:                               00:07.315.000 (m:s.ms.us)
+Throughput:                             65.89 (op/s)
+Start Time (China Standard Time):       2018-06-20 - 22:02:20.463
+Finish Time (China Standard Time):      2018-06-20 - 22:02:27.778
+------------------------------------------------------------------------------
+    LdbcQuery1
+        Units:              MILLISECONDS
+        Count:              56
+        Min:                1
+        Max:                253
+        Mean:               17.96
+        50th Percentile:    11
+        90th Percentile:    29
+        95th Percentile:    65
+        99th Percentile:    70
+    LdbcShortQuery1PersonProfile
+        Units:              MILLISECONDS
+        Count:              62
+        Min:                1
+        Max:                4
+        Mean:               2.03
+        50th Percentile:    1
+        90th Percentile:    4
+        95th Percentile:    4
+        99th Percentile:    4
+    LdbcShortQuery2PersonPosts
+        Units:              MILLISECONDS
+        Count:              62
+        Min:                4
+        Max:                720
+        Mean:               66.90
+        50th Percentile:    5
+        90th Percentile:    225
+        95th Percentile:    381
+        99th Percentile:    490
+    LdbcShortQuery3PersonFriends
+        Units:              MILLISECONDS
+        Count:              62
+        Min:                1
+        Max:                213
+        Mean:               9.26
+        50th Percentile:    1
+        90th Percentile:    9
+        95th Percentile:    21
+        99th Percentile:    171
+    LdbcShortQuery4MessageContent
+        Units:              MILLISECONDS
+        Count:              60
+        Min:                1
+        Max:                11
+        Mean:               2.55
+        50th Percentile:    2
+        90th Percentile:    4
+        95th Percentile:    5
+        99th Percentile:    5
+    LdbcShortQuery5MessageCreator
+        Units:              MILLISECONDS
+        Count:              60
+        Min:                1
+        Max:                4
+        Mean:               2.28
+        50th Percentile:    2
+        90th Percentile:    3
+        95th Percentile:    4
+        99th Percentile:    4
+    LdbcShortQuery6MessageForum
+        Units:              MILLISECONDS
+        Count:              60
+        Min:                1
+        Max:                13
+        Mean:               4.18
+        50th Percentile:    4
+        90th Percentile:    7
+        95th Percentile:    8
+        99th Percentile:    10
+    LdbcShortQuery7MessageReplies
+        Units:              MILLISECONDS
+        Count:              60
+        Min:                1
+        Max:                21
+        Mean:               7.08
+        50th Percentile:    5
+        90th Percentile:    13
+        95th Percentile:    16
+        99th Percentile:    16
+------------------------------------------------------------------------------
+
+22:02:33,101  INFO ExecuteWorkloadMode:40 - Exporting workload metrics to /home/user26/janusgraph/results/LDBC-results.json...
+22:02:33,110  INFO ExecuteWorkloadMode:40 - Validating workload results...
+22:02:33,222  INFO ExecuteWorkloadMode:40 - Exporting workload results validation to: /home/user26/janusgraph/results/LDBC-validation.json
+22:02:33,228  INFO ExecuteWorkloadMode:40 - FAILED SCHEDULE AUDIT -- errors:
+	TOO_MANY_LATE_OPERATIONS : Late Count (15) > (5) Tolerated Late Count
+	TOO_MANY_LATE_OPERATIONS_FOR_TYPE : Late Count for LdbcQuery1 (15) > (10) Tolerated Late Count
+22:02:33,235  INFO ExecuteWorkloadMode:40 - Shutting down database connector...
+22:02:33,236  INFO ExecuteWorkloadMode:40 - Database connector shutdown successfully
+22:02:33,236  INFO ExecuteWorkloadMode:40 - Workload completed successfully
